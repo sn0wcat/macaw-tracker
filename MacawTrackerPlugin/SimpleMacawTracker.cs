@@ -38,7 +38,7 @@ namespace MacawTracker
 
         internal void OnPlayerPlay(Card card)
         {
-			if (!string.IsNullOrEmpty(card.EnglishText) && card.EnglishText.Contains("Battlecry:"))
+			if (!string.IsNullOrEmpty(card.EnglishText) && card.EnglishText.Contains("Battlecry:") && ! card.EnglishText.Contains("Repeat the last Battlecry"))
 			{
 				_playerList.Update(new List<Card>() { card });
 			}
@@ -46,7 +46,8 @@ namespace MacawTracker
 
 		internal void OnOpponentPlay(Card card)
 		{
-			if (!string.IsNullOrEmpty(card.EnglishText) && card.EnglishText.Contains("Battlecry:")) { 
+			if (!string.IsNullOrEmpty(card.EnglishText) && card.EnglishText.Contains("Battlecry:") && !card.EnglishText.Contains("Repeat the last Battlecry"))
+			{ 
 				_opponentList.Update(new List<Card>() { card });
 			}
         }
