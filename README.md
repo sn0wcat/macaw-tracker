@@ -4,5 +4,5 @@
 
 A simple plugin for [Hearthstone Deck Tracker](https://github.com/Epix37/Hearthstone-Deck-Tracker) to track the last battlecry played.
 
-![screenshot](http://i.imgur.com/dBBnawz.png)
+
 
