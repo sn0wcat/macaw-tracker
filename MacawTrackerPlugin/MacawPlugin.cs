@@ -22,7 +22,7 @@ namespace MacawTracker
 
 		public string Description
 		{
-			get { return "Macaw Tracker Plugin (Tracks last card which was played with BattleCry"; }
+			get { return "Macaw Tracker Plugin (Tracks the last Battlecry: card)"; }
 		}
 
 		public MenuItem MenuItem
@@ -71,7 +71,7 @@ namespace MacawTracker
 
 		public Version Version
 		{
-			get { return new Version(1,0,0); }
+			get { return new Version(1,0,1); }
 		}
 	}
 }
